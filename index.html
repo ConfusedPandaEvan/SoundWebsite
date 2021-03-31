@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ShowerThoughts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+
+    <body>
+    <!-- <body onload="createRain();"> -->
+        <section class="rain">
+            <img src >
+            
+            <audio id ="player">
+                <source src = "sound/ShowerRunning.m4a" type = "audio/mpeg">
+            </audio>
+            
+            <!-- <section class="rain"></section> -->
+
+
+            <div class = "ShowerHead" id = "ShowerHead"></div>
+            <div class = "interactableWall" id = "Wall"></div>
+            <div onClick="setRain()" class = "interactableTap" id = "interactableTap">
+                <img src ="ShowerTap.svg", alt ="ShowerTap">
+            </div>
+            <div class = "container" id = "container">
+                <h5>Start Shower By Clicking the ShowerTab</h5>
+                <h5>Click the Background to switch between Shower Thoughts</h5>
+                <h5>End ShowerThought by clicking the ShowerTab again.</h5>
+            </div>
+        </section>
+        <script src="js/script.js" charset="utf-8"></script>
+        
+    </body>
+</html>
