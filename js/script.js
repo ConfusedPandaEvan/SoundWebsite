@@ -30,6 +30,7 @@ document.getElementById("Wall").onclick = function() {
     if i == 6{
         i -= 1;
     }
+    console.log("This: " + i);
     
     // color change
     
