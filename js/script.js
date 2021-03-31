@@ -27,7 +27,9 @@ document.getElementById("Wall").onclick = function() {
     // random integer change to make sure a different monologue and color will play next
     // i = (i + 1 + Math.floor(Math.random() * 5))%6;
     i += 1;
-    console.log("This" + i);
+    if i == 6{
+        i -= 1;
+    }
     
     // color change
     
