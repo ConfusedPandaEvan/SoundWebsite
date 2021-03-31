@@ -4,7 +4,7 @@ let wall = document.getElementById("Wall")
 
 var ShowerSounds = ["Shampoo.m4a", "BrushingTeeth.m4a", "HairProduct.m4a", "Pumping.m4a", "WaterRunning.m4a", "BeardScratch.mp3" ]
 var color = ["#D5FFC6", "#B3F5E9", "#EDD3FD", "#F2FDD3", "#FDD3E9", "#FDECD3"];
-var monologues = ["2_cat.mp3", "Toothbrush.m4a", "1_istanbul.mp3", "Ritual.m4a", "3_cafe.mp3","TheSpot.m4a"]
+var monologues = ["2_cat.mp3", "showerthought1.mp3", "1_istanbul.mp3", "showerthought2.mp3", "3_cafe.mp3","showerthought3.mp3"]
 var ShowerStartEnd = ["StartShower.m4a", "EndShower.m4a"]
 // index for monologues and color
 var i = 0;
@@ -25,12 +25,7 @@ document.getElementById("Wall").onclick = function() {
     ShowerEnd.pause();
     
     // random integer change to make sure a different monologue and color will play next
-    // i = (i + 1 + Math.floor(Math.random() * 5))%6;
-    i += 1;
-    if i == 6{
-        i -= 1;
-    }
-    console.log("This: " + i);
+    i = (i + 1 + Math.floor(Math.random() * 5))%6;
     
     // color change
     
