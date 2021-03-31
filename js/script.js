@@ -25,7 +25,8 @@ document.getElementById("Wall").onclick = function() {
     ShowerEnd.pause();
     
     // random integer change to make sure a different monologue and color will play next
-    i = (i + 1 + Math.floor(Math.random() * 5))%6;
+    // i = (i + 1 + Math.floor(Math.random() * 5))%6;
+    i += 1;
     
     // color change
     
